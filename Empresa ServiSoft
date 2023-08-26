@@ -1,0 +1,29 @@
+/* Nombre: Jose Miguel Perez Matricula: 21-SIIT-1-055 Seccion: 0541 */
+
+CREATE DATABASE Empresa ServiSoft; 
+
+CREATE TABLE Empleados (
+   CodigoId int IDENTITY(1,1) PRIMARY KEY,
+   Nombre varchar(50) NOT NULL,
+   Apellido varchar(50) NOT NULL,
+   Email varchar(100) NOT NULL,
+   telefono varchar(20) NOT NULL,
+    Edad varchar(20) NOT NULL,
+   Contratacion Fecha varchar(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE Clientes (
+   Idclientes int IDENTITY(1,1) PRIMARY KEY,
+   Nombre varchar(50) NOT NULL,
+   Apellidos varchar(50) NOT NULL,
+   Direccion varchar(50) NOT NULL,
+   telefono varchar(50) NOT NULL,
+   Email varchar(50) NOT NULL,
+);
+
+CREATE TABLE Servicios (
+   IdServivios int IDENTITY(1,1) PRIMARY KEY,
+   Nombre varchar(50) NOT NULL,
+   Descripcion varchar(50) NOT NULL,
+   Precio int NOT NULL,
+  
